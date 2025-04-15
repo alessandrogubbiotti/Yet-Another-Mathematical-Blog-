@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yet Another Mathematical Blog</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Georgia&display=swap">
+  <script>
+    // MathJax LaTeX config
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      background: #fafafa;
+      color: #2c3e50;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #34495e;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+
+    nav a {
+      color: #ecf0f1;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    article {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    article h2 {
+      margin-top: 0;
+    }
+
+    .author {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #ecf0f1;
+      padding: 1.5rem;
+      text-align: center;
+      color: #7f8c8d;
+    }
+
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yet Another Mathematical Blog</h1>
+    <p>Exploring math, one post at a time.</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Authors</a>
+    <a href="#">Topics</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <article>
+      <h2>🎲 The Magic of 7: Dice, Probability, and Symmetry</h2>
+      <p class="author">by Alice Newton</p>
+      <p>
+        When you roll two standard dice, the number 7 has a special charm — it's the most common sum.
+        This is because there are 6 outcomes that lead to it:
+        <code>(1,6)</code>, <code>(2,5)</code>, <code>(3,4)</code>, <code>(4,3)</code>, <code>(5,2)</code>, and <code>(6,1)</code>.
+      </p>
+      <p>
+        In probability terms:  
+        $$P(\text{sum = 7}) = \frac{6}{36} = \frac{1}{6}$$  
+      </p>
+    </article>
+
+    <article>
+      <h2>♾️ What Is Infinity?</h2>
+      <p class="author">by Brian Epsilon</p>
+      <p>
+        Infinity isn't a number — it's a concept. For example, the sum:
+        $$1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \dots = 2$$
+        shows that even an infinite number of terms can add to a finite result!
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yet Another Mathematical Blog. Made with ❤️ by math lovers.</p>
+  </footer>
+</body>
+</html>
